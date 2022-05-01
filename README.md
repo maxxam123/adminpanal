@@ -57,3 +57,19 @@ featuredInfo --> added FeaturedInfo.jsx & featuredInfo.css
 Home.jsx --> added <FeaturedInfo.jsx/>
 
 public --> added assets/ (pictures)
+
+7.
+
+npm install react-router-dom@5
+
+npm install @material-ui/data-grid --force
+
+App.js --> import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+App.js --> added Route "UserList"
+
+src --> added dummyData.js
+
+Sidebar.jsx --> added LINK to "home & users"
+
+UserList.jsx --> display data from dummydata.js
