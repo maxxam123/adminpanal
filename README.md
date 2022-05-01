@@ -29,3 +29,31 @@ home --> added home.css & Home.jsx
 App.js added <Home/>
 
 tested the app --> everythink OK
+
+5.
+
+npm install @material-ui/core --force
+
+npm install @material-ui/icons --force
+
+components --> created sidebar & topbar
+
+sidebar --> created Sidebar.jsx & sidebar.css
+
+topbar --> created Topbar.jsx & topbar.css
+
+src --> created app.css
+
+modified App.js
+
+6.
+
+App.js --> added "import ./app.css"
+
+components --> added featuredInfo
+
+featuredInfo --> added FeaturedInfo.jsx & featuredInfo.css
+
+Home.jsx --> added <FeaturedInfo.jsx/>
+
+public --> added assets/ (pictures)
