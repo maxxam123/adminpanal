@@ -73,3 +73,17 @@ src --> added dummyData.js
 Sidebar.jsx --> added LINK to "home & users"
 
 UserList.jsx --> display data from dummydata.js
+
+.8
+
+src --> added context
+
+context --> added authContext & movieContext & userContext
+
+userContext --> added apiCalls.js & UserContext.js & UserActions.js & UserReducer
+
+npm install axios
+
+modified index.js
+
+modified UserList.jsx
