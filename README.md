@@ -1,9 +1,8 @@
-1)
+1.
 
 npx create-react-app .
 
-
-2)
+2.
 
 deleted all files in public excluded index.html
 
@@ -13,9 +12,8 @@ deleted all files in src excluded App.js & index.js
 
 in public created style.css
 
+3.
 
-3)
+modified App.js & index.js
 
-
-
-
+tested the app --> everything is working perfectly
