@@ -17,3 +17,15 @@ in public created style.css
 modified App.js & index.js
 
 tested the app --> everything is working perfectly
+
+4.
+
+src --> added context & pages & components
+
+pages --> added home
+
+home --> added home.css & Home.jsx
+
+App.js added <Home/>
+
+tested the app --> everythink OK
