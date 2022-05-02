@@ -137,3 +137,27 @@ pages --> added newProduct --> added NewProduct.jsx & newProduct.css
 App.js --> added Route "/newProduct"
 
 16.
+
+pages --> added login --> added Login.jsx
+
+Topbar.jsx --> activated "Logout"
+
+App.js --> added Route "/Login"
+
+App.js --> added "const { user } = useContext(AuthContext);"
+
+App.js --> added:
+
+<Route path="/login">{user ? <Redirect to="/" /> : <Login /></Route>
+{user && (
+<>
+<Topbar/>
+<div className="container" >
+.
+.
+.
+</div>
+</>
+)}
+
+index.js --> added <AuthContextProvider/>
