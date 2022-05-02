@@ -18,6 +18,7 @@ import { Login } from './pages/login/Login';
 import { useContext } from 'react';
 import { AuthContext } from './context/authContext/AuthContext';
 import Home from './pages/home/Home';
+import { SliderList } from './pages/sliderList/SliderList';
 
 function App() {
   const { user } = useContext(AuthContext);
@@ -51,6 +52,9 @@ function App() {
               </Route>
               <Route path="/newProduct">
                 <NewProduct />
+              </Route>
+              <Route path="/sliders">
+                <SliderList />
               </Route>
             </div>
           </>

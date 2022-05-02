@@ -1,36 +1,39 @@
 import { ArrowDownward, ArrowUpward } from '@material-ui/icons';
-// import { useEffect, useState } from 'react';
-// import { userRequest } from '../../requestMethod';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 import './featuredInfo.css';
 
 export const FeaturedInfo = () => {
-  // const [income, setIncome] = useState([]);
-  // const [perc, setPerc] = useState(0);
+  const [income, setIncome] = useState([]);
+  const [perc, setPerc] = useState(0);
 
-  // useEffect(() => {
-  //   const getIncome = async () => {
-  //     try {
-  //       const res = await userRequest.get('order/income');
-  //       const list = res.data.sort((a, b) => {
-  //         return a._id - b._id;
-  //       });
-  //       setIncome(list);
-  //       setPerc((list[1].total * 100) / list[0].total - 100);
-  //     } catch {}
-  //   };
-  //   getIncome();
-  // }, []);
+  useEffect(() => {
+    const getIncome = async () => {
+      try {
+        const res = await axios.get('http://localhost:5000/api/order/income');
+        const list = res.data.sort((a, b) => {
+          return a._id - b._id;
+        });
+        setIncome(list);
+        setPerc((list[1].total * 100) / list[0].total - 100);
+      } catch {}
+    };
+    getIncome();
+  }, []);
 
-  // console.log(income);
+  console.log(income);
 
   return (
     <div className="featuredInfo">
-      {/* <div className="featuredItem">
+      <div className="featuredItem">
         <span className="featuredTitle">Revenue</span>
         <div className="featuredMoneyContainer">
-          <span className="featuredMoney">This Month $ {income[1]?.total}</span>
+          <span className="featuredMoney">Last Month $ {income[0]?.total}</span>
+          <span className="featuredSub">This Month $ {income[1]?.total}</span>
+          <span className="test">compared with last Month</span>
           <span className="featuredMoneyRate">
-            % {Math.floor(perc)}{' '}
+            {Math.floor(perc)}
+            {''}%
             {perc < 0 ? (
               <ArrowDownward className="featuredIcon negative" />
             ) : (
@@ -38,8 +41,7 @@ export const FeaturedInfo = () => {
             )}
           </span>
         </div>
-        <span className="featuredSub">Last month $ {income[0]?.total}</span>
-      </div> */}
+      </div>
       <div className="featuredItem">
         <span className="featuredTitle">Sales</span>
         <div className="featuredMoneyContainer">

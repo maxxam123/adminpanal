@@ -152,6 +152,7 @@ App.js --> added:
 {user && (
 <>
 <Topbar/>
+
 <div className="container" >
 .
 .
@@ -161,3 +162,5 @@ App.js --> added:
 )}
 
 index.js --> added <AuthContextProvider/>
+
+17.

@@ -27,6 +27,12 @@ export default function Sidebar() {
                 users
               </li>
             </Link>
+            <Link to="/sliders" className="link">
+              <li className="sidebarListItem">
+                <Timeline className="sidebarIcon" />
+                sliders
+              </li>
+            </Link>
           </ul>
         </div>
         <div className="sidebarMenu">
