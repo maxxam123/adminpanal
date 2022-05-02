@@ -109,3 +109,9 @@ App.js --> added Route "/newUser"
 npm install firebase
 
 src --> added firebase.js
+
+12.
+
+modified NewUser.jsx
+
+13.

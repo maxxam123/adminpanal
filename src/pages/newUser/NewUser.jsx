@@ -97,6 +97,42 @@ export const NewUser = () => {
           />
         </div>
         <div className="newUserItem">
+          <label>Title</label>
+          <input
+            type="text"
+            name="title"
+            placeholder="Software engineer"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="newUserItem">
+          <label>Phone</label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="+1 234 567 89"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="newUserItem">
+          <label>Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="johnsmith99"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="newUserItem">
+          <label>Birth</label>
+          <input
+            type="text"
+            name="birth"
+            placeholder="10.10.1995"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="newUserItem">
           <label>Password</label>
           <input
             type="text"
