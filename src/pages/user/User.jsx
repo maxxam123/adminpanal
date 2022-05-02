@@ -5,10 +5,13 @@ import {
   PhoneAndroid,
   Publish,
 } from '@material-ui/icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './user.css';
 
 export const User = () => {
+  const location = useLocation();
+  const user = location.user;
+
   return (
     <div className="user">
       <div className="userTitleContainer">
@@ -20,29 +23,35 @@ export const User = () => {
       <div className="userContainer">
         <div className="userShow">
           <div className="userShowTop">
-            <img src="/assets/4.jpg" alt="" className="userShowImg" />
+            <img src={user.img} alt="" className="userShowImg" />
             <div className="userShowTopTitle">
-              <span className="userShowUsername">Anna Smith</span>
-              <span className="userShowUserTitle">CEO</span>
+              <span className="userShowUsername">
+                Name {': '}
+                {user.username}
+              </span>
+              <span className="userShowUserTitle">
+                Title {': '}
+                {user.title}
+              </span>
             </div>
           </div>
           <div className="userShowBottom">
             <span className="userShowTitle">Account Details</span>
             <div className="userShowInfo">
               <PermIdentity className="userShowIcon" />
-              <span className="userShowInfoTitle">annasmith99</span>
+              <span className="userShowInfoTitle">{user.name}</span>
             </div>
             <div className="userShowInfo">
               <CalendarToday className="userShowIcon" />
-              <span className="userShowInfoTitle">10.12.1999</span>
+              <span className="userShowInfoTitle">{user.birth}</span>
             </div>
             <div className="userShowInfo">
               <PhoneAndroid className="userShowIcon" />
-              <span className="userShowInfoTitle">+1 234 567 89</span>
+              <span className="userShowInfoTitle">{user.phone}</span>
             </div>
             <div className="userShowInfo">
               <MailOutline className="userShowIcon" />
-              <span className="userShowInfoTitle">annasmith99@gmail.com</span>
+              <span className="userShowInfoTitle">{user.email}</span>
             </div>
           </div>
         </div>

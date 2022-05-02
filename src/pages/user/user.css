@@ -53,12 +53,12 @@
 
 .userShowTopTitle{
     display: flex;
-    font-display: column;
+    flex-direction: column;
     margin-left: 20px;
 }
 
 .userShowUsername{
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .userShowUserTitle{
