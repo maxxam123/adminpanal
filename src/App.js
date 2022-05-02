@@ -1,6 +1,5 @@
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/topbar/Topbar';
-import { Home } from './pages/home/Home';
 import './app.css';
 import {
   BrowserRouter as Router,
@@ -18,6 +17,7 @@ import { NewProduct } from './pages/newProduct/NewProduct';
 import { Login } from './pages/login/Login';
 import { useContext } from 'react';
 import { AuthContext } from './context/authContext/AuthContext';
+import Home from './pages/home/Home';
 
 function App() {
   const { user } = useContext(AuthContext);
