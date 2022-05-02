@@ -133,6 +133,15 @@ export const NewUser = () => {
           />
         </div>
         <div className="newUserItem">
+          <label>Admin</label>
+          <input
+            type="text"
+            name="isAdmin"
+            placeholder="true or false"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="newUserItem">
           <label>Password</label>
           <input
             type="text"

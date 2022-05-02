@@ -95,7 +95,7 @@ export const Product = () => {
           </div>
           <div className="productFormRight">
             <div className="productUpload">
-              <img className="productUploadImg" src="" alt="" />
+              <img className="productUploadImg" src={movie.img} alt="" />
               <label for="file">
                 <Publish />
               </label>

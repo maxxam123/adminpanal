@@ -53,6 +53,10 @@ export const User = () => {
               <MailOutline className="userShowIcon" />
               <span className="userShowInfoTitle">{user.email}</span>
             </div>
+            <div className="userShowInfo">
+              <MailOutline className="userShowIcon" />
+              <span className="userShowInfoTitle">Admin:</span>
+            </div>
           </div>
         </div>
         <div className="userUpdate">
@@ -102,7 +106,7 @@ export const User = () => {
             </div>
             <div className="userUpdateRight">
               <div className="userUpdateUpload">
-                <img className="userUpdateImg" src="/assets/4.jpg" alt="" />
+                <img className="userUpdateImg" src={user.img} alt="" />
                 <label htmlFor="file">
                   <Publish className="userUpdateIcon" />
                 </label>
