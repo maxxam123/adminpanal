@@ -87,3 +87,25 @@ npm install axios
 modified index.js
 
 modified UserList.jsx
+
+9.
+
+pages --> added user
+
+user --> added User.jsx & user.css
+
+App.js --> added new Route "/user/:userId"
+
+10.
+
+modified User.jsx
+
+11.
+
+pages --> added newUser --> added NewUserjsx & newUser.css
+
+App.js --> added Route "/newUser"
+
+npm install firebase
+
+src --> added firebase.js
