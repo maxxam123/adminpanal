@@ -15,12 +15,12 @@ export default function Sidebar() {
                 home
               </li>
             </Link>
-            {/* <Link to="/products" className="link"> */}
-            <li className="sidebarListItem">
-              <LineStyle className="sidebarIcon" />
-              products
-            </li>
-            {/* </Link> */}
+            <Link to="/products" className="link">
+              <li className="sidebarListItem">
+                <LineStyle className="sidebarIcon" />
+                products
+              </li>
+            </Link>
             <Link to="/users" className="link">
               <li className="sidebarListItem">
                 <Timeline className="sidebarIcon" />

@@ -115,3 +115,11 @@ src --> added firebase.js
 modified NewUser.jsx
 
 13.
+
+pages --> added productList --> added ProductList.jsx / productList.css
+
+App.js added Route "/products"
+
+Sidebar.jsx --> activated LINK to "products"
+
+index.js --> added <MovieContextProvider/>
