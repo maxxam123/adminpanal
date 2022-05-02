@@ -123,3 +123,17 @@ App.js added Route "/products"
 Sidebar.jsx --> activated LINK to "products"
 
 index.js --> added <MovieContextProvider/>
+
+14.
+
+pages --> added product --> added Product.jsx & product.css
+
+App.js --> added Route "/product/:productId
+
+15.
+
+pages --> added newProduct --> added NewProduct.jsx & newProduct.css
+
+App.js --> added Route "/newProduct"
+
+16.
